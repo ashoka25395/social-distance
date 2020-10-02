@@ -3,9 +3,6 @@
 **I have created the restFulWebService for social distance.I have written 5 REST APIs:**
 
 1.createProfile
-*
-*
-*
 2.addUserFriend
 3.removeUserFriend
 4.viewFriendList
