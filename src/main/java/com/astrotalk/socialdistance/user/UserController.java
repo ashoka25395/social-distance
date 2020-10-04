@@ -31,6 +31,7 @@ public class UserController {
 	private UserService userService;
 
 	/**
+	 * @description this mapping is used to create profile
 	 * @param user user
 	 * @return user
 	 */
@@ -40,6 +41,7 @@ public class UserController {
 	}
 
 	/**
+	 * @description this mapping is used to add friend to user
 	 * @param userId userId
 	 * @param friendId friendId
 	 * @return string
@@ -50,6 +52,7 @@ public class UserController {
 	}
 
 	/**
+	 * @description this mapping is used to remove friend from user
 	 * @param userId userId
 	 * @param friendId friendId
 	 * @return string
@@ -60,6 +63,7 @@ public class UserController {
 	}
 
 	/**
+	 * @description this mapping is used to see all the friends
 	 * @param userId userId
 	 * @return userList
 	 */
@@ -69,6 +73,7 @@ public class UserController {
 	}
 
 	/**
+	 * @description this mapping is used to see all the friends
 	 * @param userId userId
 	 * @param k k
 	 * @return friendList at distance k
