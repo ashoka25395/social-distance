@@ -10,7 +10,7 @@
 
 All the apis are simple except last one where i use BFS(Breadth First Search).First time my competitve coding part come into practice i enjoyed writing this last api.
 
-Tech Stack:
+**Tech Stack:**
 1.Java 8
 2.Spring Boot 
 3.Postgresql
