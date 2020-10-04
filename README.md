@@ -1,12 +1,12 @@
 # social-distance
 
-**I have created the restFulWebService for social distance.I have written 5 REST APIs:**
+**I have created the restFulWebService for social distance.I have written 5 REST APIs:**</br>
 
-1.createProfile
-2.addUserFriend
-3.removeUserFriend
-4.viewFriendList
-5.findConnectionsAtDistanceK
+1.createProfile</br>
+2.addUserFriend</br>
+3.removeUserFriend</br>
+4.viewFriendList</br>
+5.findConnectionsAtDistanceK</br>
 
 All the apis are simple except last one where i use BFS(Breadth First Search).First time my competitve coding part come into practice i enjoyed writing this last api.
 
