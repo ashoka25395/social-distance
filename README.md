@@ -18,4 +18,4 @@ All the apis are simple except last one where i use BFS(Breadth First Search).Fi
 
 
 **Instructions to run the application:**</br>
-This is spring boot project with maven dependecies.You can import the project in spring boot and change the db properties in application.properties file then you just need to run **mvn clean spring-boot:run** command to run the project.
+This is spring boot project with maven dependecies.You can import the project in spring boot and change the db properties in application.properties file then you just need to run <a>**mvn clean spring-boot:run**</a> command to run the project.
