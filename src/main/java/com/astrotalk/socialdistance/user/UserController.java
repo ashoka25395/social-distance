@@ -41,6 +41,7 @@ public class UserController {
 	}
 
 	/**
+	 * @author Ashok
 	 * @description this mapping is used to add friend to user
 	 * @param userId userId
 	 * @param friendId friendId
@@ -52,6 +53,7 @@ public class UserController {
 	}
 
 	/**
+	 * @author Ashok
 	 * @description this mapping is used to remove friend from user
 	 * @param userId userId
 	 * @param friendId friendId
@@ -63,6 +65,7 @@ public class UserController {
 	}
 
 	/**
+	 * @author Ashok
 	 * @description this mapping is used to see all the friends
 	 * @param userId userId
 	 * @return userList
@@ -73,6 +76,7 @@ public class UserController {
 	}
 
 	/**
+	 * @author Ashok
 	 * @description this mapping is used to see all the friends
 	 * @param userId userId
 	 * @param k k
