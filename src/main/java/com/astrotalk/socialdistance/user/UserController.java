@@ -90,6 +90,7 @@ public class UserController {
 	@GetMapping("/friendsAtDistanceK")
 	public List<User> friendsAtDistanceK(@RequestParam int userId,@RequestParam int k) {
 		System.out.println("jsut checking ");
+		System.out.println("just checking again");
 		return userService.friendsAtDistanceK(userId,k);
 	}
 
