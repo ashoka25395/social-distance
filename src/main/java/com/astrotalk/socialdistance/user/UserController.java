@@ -77,6 +77,8 @@ public class UserController {
 
 	public List<User> viewFriendList(@RequestParam int userId) {
 		System.out.println("just practice git commands : ");
+		System.out.println("just checking again");
+
 		return userService.viewFriendList(userId);
 	}
 
@@ -90,6 +92,7 @@ public class UserController {
 	@GetMapping("/friendsAtDistanceK")
 	public List<User> friendsAtDistanceK(@RequestParam int userId,@RequestParam int k) {
 		System.out.println("jsut checking ");
+		System.out.println("just checking again");
 		return userService.friendsAtDistanceK(userId,k);
 	}
 
