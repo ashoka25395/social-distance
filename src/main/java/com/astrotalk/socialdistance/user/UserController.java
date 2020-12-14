@@ -37,6 +37,8 @@ public class UserController {
 	 */
 	@PostMapping("/createProfile")
 	public User createProfile(@Valid @RequestBody User user) {
+		
+		Sysytem.out.println("just debugging");
 		return userService.createProfile(user);
 	}
 
