@@ -31,20 +31,21 @@ public class UserController {
 	private UserService userService;
 
 	/**
-	 * @description this mapping is used to create profile
+	 * description this mapping is used to create profile
 	 * @param user user
 	 * @return user
 	 */
 	@PostMapping("/createProfile")
 	public User createProfile(@Valid @RequestBody User user) {
-		
-		Sysytem.out.println("just debugging");
+		System.out.println("username is: "+user.getUsername());
+
+		System.out.println("just debugging");
 		return userService.createProfile(user);
 	}
 
 	/**
 	 * @author Ashok
-	 * @description this mapping is used to add friend to user
+	 * description this mapping is used to add friend to user
 	 * @param userId userId
 	 * @param friendId friendId
 	 * @return string
@@ -56,7 +57,7 @@ public class UserController {
 
 	/**
 	 * @author Ashok
-	 * @description this mapping is used to remove friend from user
+	 * description this mapping is used to remove friend from user
 	 * @param userId userId
 	 * @param friendId friendId
 	 * @return string
@@ -68,7 +69,7 @@ public class UserController {
 
 	/**
 	 * @author Ashok
-	 * @description this mapping is used to see all the friends
+	 * description this mapping is used to see all the friends
 	 * @param userId userId
 	 * @return userList
 	 */
@@ -79,13 +80,14 @@ public class UserController {
 
 	/**
 	 * @author Ashok
-	 * @description this mapping is used to see all the friends
+	 * description this mapping is used to see all the friends
 	 * @param userId userId
 	 * @param k k
 	 * @return friendList at distance k
 	 */
 	@GetMapping("/friendsAtDistanceK")
 	public List<User> friendsAtDistanceK(@RequestParam int userId,@RequestParam int k) {
+		System.out.println("jsut checking ");
 		return userService.friendsAtDistanceK(userId,k);
 	}
 
