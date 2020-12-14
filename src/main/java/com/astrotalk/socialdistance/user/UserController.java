@@ -74,7 +74,9 @@ public class UserController {
 	 * @return userList
 	 */
 	@GetMapping("/viewFriendList")
+
 	public List<User> viewFriendList(@RequestParam int userId) {
+		System.out.println("just practice git commands : ");
 		return userService.viewFriendList(userId);
 	}
 
