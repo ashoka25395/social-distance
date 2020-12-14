@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public User createProfile(@Valid User user) {
-
+                System.out.println("in user service impl");
 		return userRepository.save(user);
 	}
 
