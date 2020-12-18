@@ -38,6 +38,9 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public String addUserFriend(int userId, int friendId) {
+		System.out.println("just practice git commands : ");
+		System.out.println("just checking again");
+
 		UserFriends userFriends = userFriendRepository.findByUserIdAndFriendId(userId, friendId);
 		if (userFriends != null) {
 			throw new CustomException("Friend already exist!!!");

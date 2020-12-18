@@ -38,8 +38,6 @@ public class UserController {
 	@PostMapping("/createProfile")
 	public User createProfile(@Valid @RequestBody User user) {
 		System.out.println("username is: "+user.getUsername());
-
-		System.out.println("just debugging");
 		return userService.createProfile(user);
 	}
 
@@ -52,7 +50,8 @@ public class UserController {
 	 */
 	@GetMapping("/addUserFriend")
 	public String addUserFriend(@RequestParam int userId, @RequestParam int friendId) {
-		return userService.addUserFriend(userId, friendId);
+		String name=userService.addUserFriend(userId,friendId);
+ 		return userService.addUserFriend(userId, friendId);
 	}
 
 	/**
@@ -74,6 +73,7 @@ public class UserController {
 	 * @return userList
 	 */
 	@GetMapping("/viewFriendList")
+
 	public List<User> viewFriendList(@RequestParam int userId) {
 		return userService.viewFriendList(userId);
 	}
@@ -87,7 +87,6 @@ public class UserController {
 	 */
 	@GetMapping("/friendsAtDistanceK")
 	public List<User> friendsAtDistanceK(@RequestParam int userId,@RequestParam int k) {
-		System.out.println("jsut checking ");
 		return userService.friendsAtDistanceK(userId,k);
 	}
 
