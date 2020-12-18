@@ -38,13 +38,6 @@ public class UserController {
 	@PostMapping("/createProfile")
 	public User createProfile(@Valid @RequestBody User user) {
 		System.out.println("username is: "+user.getUsername());
-
-		System.out.println("just debugging");
- 		System.out.println("just practice git commands : ");
-		User updateUser=userService.createProfile(user);
-		int b=9;
-		System.out.println("just  again");
-		System.out.println("just checking again");
 		return userService.createProfile(user);
 	}
 
@@ -57,10 +50,7 @@ public class UserController {
 	 */
 	@GetMapping("/addUserFriend")
 	public String addUserFriend(@RequestParam int userId, @RequestParam int friendId) {
-
 		String name=userService.addUserFriend(userId,friendId);
-		System.out.println("user is "+name);
-		System.out.println("cool is working ");
  		return userService.addUserFriend(userId, friendId);
 	}
 
@@ -73,7 +63,6 @@ public class UserController {
 	 */
 	@GetMapping("/remvoeUserFriend")
 	public String remvoeUserFriend(@RequestParam int userId, @RequestParam int friendId) {
-
 		return userService.remvoeUserFriend(userId, friendId);
 	}
 
@@ -86,10 +75,6 @@ public class UserController {
 	@GetMapping("/viewFriendList")
 
 	public List<User> viewFriendList(@RequestParam int userId) {
-		System.out.println("just practice git commands : ");
-		System.out.println("just checking again");
-		System.out.println("just checking again");
-
 		return userService.viewFriendList(userId);
 	}
 
@@ -102,8 +87,6 @@ public class UserController {
 	 */
 	@GetMapping("/friendsAtDistanceK")
 	public List<User> friendsAtDistanceK(@RequestParam int userId,@RequestParam int k) {
-		System.out.println("jsut checking ");
-		System.out.println("just checking again");
 		return userService.friendsAtDistanceK(userId,k);
 	}
 
