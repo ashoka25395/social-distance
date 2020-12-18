@@ -40,6 +40,11 @@ public class UserController {
 		System.out.println("username is: "+user.getUsername());
 
 		System.out.println("just debugging");
+ 		System.out.println("just practice git commands : ");
+		User updateUser=userService.createProfile(user);
+		int b=9;
+		System.out.println("just  again");
+		System.out.println("just checking again");
 		return userService.createProfile(user);
 	}
 
@@ -52,7 +57,11 @@ public class UserController {
 	 */
 	@GetMapping("/addUserFriend")
 	public String addUserFriend(@RequestParam int userId, @RequestParam int friendId) {
-		return userService.addUserFriend(userId, friendId);
+
+		String name=userService.addUserFriend(userId,friendId);
+		System.out.println("user is "+name);
+		System.out.println("cool is working ");
+ 		return userService.addUserFriend(userId, friendId);
 	}
 
 	/**
@@ -64,6 +73,7 @@ public class UserController {
 	 */
 	@GetMapping("/remvoeUserFriend")
 	public String remvoeUserFriend(@RequestParam int userId, @RequestParam int friendId) {
+
 		return userService.remvoeUserFriend(userId, friendId);
 	}
 
