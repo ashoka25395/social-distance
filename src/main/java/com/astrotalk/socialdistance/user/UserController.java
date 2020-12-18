@@ -38,11 +38,8 @@ public class UserController {
 	@PostMapping("/createProfile")
 	public User createProfile(@Valid @RequestBody User user) {
 		System.out.println("username is: "+user.getUsername());
-		System.out.println("username is: ");
-		System.out.println("username is: ");
-		System.out.println("username is: ");
-		System.out.println("username is: ");
-		System.out.println("username is: ");
+		System.out.println("username is: "+user.getUsername());
+		System.out.println("username is: "+user.getUsername());
 		System.out.println("username is: ");
 		System.out.println("username is: ");
 		System.out.println("username is: ");
