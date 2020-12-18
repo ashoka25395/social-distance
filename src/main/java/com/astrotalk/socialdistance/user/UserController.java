@@ -40,6 +40,14 @@ public class UserController {
 		System.out.println("username is: "+user.getUsername());
 		System.out.println("username is: ");
 		System.out.println("username is: ");
+		System.out.println("username is: ");
+		System.out.println("username is: ");
+		System.out.println("username is: ");
+		System.out.println("username is: ");
+		System.out.println("username is: ");
+		System.out.println("username is: ");
+		System.out.println("username is: ");
+		System.out.println("username is: ");
 		return userService.createProfile(user);
 	}
 
